@@ -13,7 +13,7 @@ const Map = ({ place }: MapProps) => {
       mapRef.current.flyTo([place.lat, place.lng]);
     }
   }, [place]);
-  return <MapContainer ref={mapRef} center={[40.7, -74]} zoom={12} scrollWheelZoom className="h-full">
+  return <MapContainer ref={mapRef} center={[10.802029, 106.649307]} zoom={12} scrollWheelZoom className="h-full">
     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
     {place && <Marker position={[place.lat, place.lng]} />}
   </MapContainer>;
